@@ -2,42 +2,38 @@ package com.example.mikeacre.reportcard;
 
 public class ReportCard{
 
-    public static void main(String[] args){
-
-    }
-
-    private String stuName;
-    private String subject;
-    private int score;
+    private String mstuName;
+    private String msubject;
+    private int mscore;
 
     @Override
     public String toString() {
         return "ReportCard{" +
-                "stuName='" + stuName + '\'' +
-                ", subject='" + subject + '\'' +
-                ", score=" + score +
+                "stuName='" + mstuName + '\'' +
+                ", subject='" + msubject + '\'' +
+                ", score=" + mscore +
                 '}';
     }
 
     public ReportCard(String stuName, String subject, int score){
-        this.stuName = stuName;
-        this.subject = subject;
-        this.score = score;
+        this.mstuName = stuName;
+        this.msubject = subject;
+        this.mscore = score;
     }
 
-    public int getScore(){return score;}
+    public int getScore(){return mscore;}
 
-    public String getName(){return stuName;}
+    public String getName(){return mstuName;}
 
-    public String getSubject(){return subject;}
+    public String getSubject(){return msubject;}
 
     public void setScore(int setscore){
-        score=setscore;
+        mscore=setscore;
     }
     public void setName(String setname){
-        stuName=setname;
+        mstuName=setname;
     }
     public void setSubject(String setsubject){
-        subject=setsubject;
+        msubject=setsubject;
     }
 }
